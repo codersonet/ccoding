@@ -1,4 +1,4 @@
-### ccoding
+# ccoding
 
 This repository contains a collection of C/C++ programming practice and learning materials organized by topic and exercise type. The project is structured to make it easy to navigate between foundational concepts, algorithmic problem solving, and language-specific practice.
 
