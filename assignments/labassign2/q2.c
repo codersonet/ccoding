@@ -26,7 +26,7 @@ int main(){
         printf("Enter for the parabola (y^2 = 4ax) => a\t&\tx: "); // Prompt user for parabola coefficients
         scanf("%f %f", &a, &x); // Read the coefficient a and x from user input
         y = 2 * sqrt(a * x); // Calculate the y value
-        area_parabola = 2*y*x - (2.0/3.0) * y*x; // Calculate the area of the parabola with y-axis
+        area_parabola =(2.0/3.0) * 2*y*x; // Calculate the area of the parabola with y-axis
         printf("The area of the parabola is with y-axis is: %.2f\n", area_parabola); // Print the area of the parabola
 
         printf("Do you want to perform another calculation? (y/n): "); // Ask user if they want to repeat
