@@ -1,4 +1,4 @@
-/*A ‘C’ program contains the following statements.
+/* A ‘C’ program contains the following statements.
 #include <stdio.h>
 int a, b;
 float x, y;
@@ -9,4 +9,4 @@ a) scanf (“%d %d %f %f”, &a, &b, &x, &y);
 b) scanf (“%d %d %e %e”, &a, &b, &x, &y);
 c) scanf (“%2d %2d %5f %6e”, &a, &b, &x, &y);
 d) scanf (“%3d %3d %8f %8e”, &a, &b, &x, &y);
-Enter the input and for each input and print the corresponding output.*/
+Enter the input and for each input and print the corresponding output. */
