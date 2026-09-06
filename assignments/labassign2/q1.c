@@ -9,7 +9,7 @@ int main(){
     int n = 10; // Declare an integer variable and initialize it.
     short int i = 11; // Declare a short integer variable and initialize it.
     long int t = 2026; // Declare a long integer varibale an initialize it.
-    float s = 97.56; // Declare a float variable and initialize it.
+    float s = 97.56303; // Declare a float variable and initialize it.
     double k = 99.9984; // Declare a double variable and initialize it.
     unsigned int m = 11215; // Declare an unsigned integer variable and initialize it.
 
