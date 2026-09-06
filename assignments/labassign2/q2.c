@@ -14,7 +14,7 @@ vii. Use ‘\t’ and ‘\n’ to print output. */
 int main(){
     char choice; // Declare a character variable to store the user's choice
     do {
-        float radius, area_circle; // Declare variables for radius and area of the circle
+        float radius=0, area_circle; // Declare variables for radius and area of the circle
         float a=0, x=0; // Declare variables for coefficients of the parabola
         float y, area_parabola; // Declare variables for coefficients and area of the parabola
 
