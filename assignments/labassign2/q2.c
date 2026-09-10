@@ -11,9 +11,14 @@ vii. Use ‘\t’ and ‘\n’ to print output. */
 #include <stdio.h>
 #include <math.h>
 #define PI 3.14159 // Define the value of PI as a constant
+
 int main(){
-    char choice; // Declare a character variable to store the user's choice
-    do {
+    int i;
+    for(i=1; i<=5; i+=1){
+    
+    /* char choice; // Declare a character variable to store the user's choice
+    do { */
+
         float radius=0, area_circle; // Declare variables for radius and area of the circle
         float a=0, x=0; // Declare variables for coefficients of the parabola
         float y, area_parabola; // Declare variables for coefficients and area of the parabola
@@ -29,9 +34,10 @@ int main(){
         area_parabola =(2.0/3.0) * 2*y*x; // Calculate the area of the parabola with y-axis
         printf("The area of the parabola is with y-axis is: %.2f\n", area_parabola); // Print the area of the parabola
 
-        printf("Do you want to perform another calculation? (y/n): "); // Ask user if they want to repeat
+        i+=1;
+    }
+       /* printf("Do you want to perform another calculation? (y/n): "); // Ask user if they want to repeat
         scanf(" %c", &choice); // Read user's choice
-    } while(choice == 'y' || choice == 'Y'); // Repeat if user chooses 'y' or 'Y'
-
-    return 0; // Return 0 to indicate successful execution
+    } while(choice == 'y' || choice == 'Y'); // Repeat if user chooses 'y' or 'Y' */
+    
 }
