@@ -11,7 +11,15 @@ S.no.     System       Format specifier      Type qualifier
 int main() {
     char a = 'A'; // Declare a character variable and initialize it.
     int b = 0x42A; // Declare an integer variable and initialize it with hexadecimal value.
-    printf("Decimal: %d\n", b);
+    double c = 0.3e-12; // Declare a double variable and initialize it with exponential value.
+    double d = 10.66E+8; // Declare a double variable and initialize it with exponential value.
+    int e = 0743; // Declare an integer variable and initialize it with octal value.
+    double f = 123.25; // Declare a double variable and initialize it with a decimal value.
+    printf("Character: %c\n", a);
     printf("Hexadecimal: %x\n", b);
+    printf("Exponential: %10.2e\n", c);
+    printf("Exponential: %10.2e\n", d);
+    printf("Octal: %o\n", e);
+    printf("Float-point: %lf\n", f);
     return 0;
 }
