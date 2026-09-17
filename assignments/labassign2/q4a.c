@@ -19,14 +19,14 @@ int main() {
     scanf("%d %d %d", &i, &j, &k);
 
     // i, j and k with a minimum field width of three characters per quantity.
-    printf("(a) i = %3d, j = %3d, k = %3d\n", i, j, k);
+    printf("i = %3d, j = %3d, k = %3d\n", i, j, k);
 
     // (i+j), (i-k) with a minimum field width of five characters per quantity.
-    printf("(b) i+j = %5d, i-k = %5d\n", i + j, i - k);
+    printf("i+j = %5d, i-k = %5d\n", i + j, i - k);
 
     /*Sqrt(i+j), abs(i-k) with a minimum field width of nine characters for the first
     quantity and seven characters for the second quantity. */
-    printf("(c) sqrt(i+j) = %9.2f, abs(i-k) = %7d\n", sqrt(i + j), abs(i - k));
+    printf("sqrt(i+j) = %9.2f, abs(i-k) = %7d\n", sqrt(i + j), abs(i - k));
 
     return 0;
 }

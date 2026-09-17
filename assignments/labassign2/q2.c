@@ -14,7 +14,7 @@ vii. Use ‘\t’ and ‘\n’ to print output. */
 
 int main(){
     int i;
-    for(i=1; i<=5; i+=1){
+    while(i<=3){
     
     /* char choice; // Declare a character variable to store the user's choice
     do { */
@@ -32,9 +32,9 @@ int main(){
         scanf("%f %f", &a, &x); // Read the coefficient a and x from user input
         y = 2 * sqrt(a * x); // Calculate the y value
         area_parabola =(2.0/3.0) * 2*y*x; // Calculate the area of the parabola with y-axis
-        printf("The area of the parabola is with y-axis is: %.2f\n", area_parabola); // Print the area of the parabola
+        printf("The area of the parabola is: %.2f\n", area_parabola); // Print the area of the parabola
 
-        i+=1;
+        i++;
     }
        /* printf("Do you want to perform another calculation? (y/n): "); // Ask user if they want to repeat
         scanf(" %c", &choice); // Read user's choice
