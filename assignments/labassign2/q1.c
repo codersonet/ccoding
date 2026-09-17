@@ -16,7 +16,7 @@ int main(){
     printf("Integer: %d\n", n); // Print the value of integer variable.
     printf("Short Integer: %hd\n", i); // Print the value of short integer variable.
     printf("Long Integer: %ld\n", t); // Print the value of long integer variable.
-    printf("Float: %.2f\n", s); // Print the value of float variable with 2 decimal places.
-    printf("Double: %.4lf\n", k); // Print the value of double variable with 4 decimal places.
+    printf("Float: %f\n", s); // Print the value of float variable with 2 decimal places.
+    printf("Double: %lf\n", k); // Print the value of double variable with 4 decimal places.
     printf("Unsigned: %u\n", m); // Print the value of unsigned integer variable.
 }

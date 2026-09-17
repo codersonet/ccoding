@@ -10,34 +10,24 @@ vii. Use ‘\t’ and ‘\n’ to print output. */
 
 #include <stdio.h>
 #include <math.h>
-#define PI 3.14159 // Define the value of PI as a constant
+#define PI 3.14 // Define the value of PI as a constant
 
 int main(){
-    int i;
-    while(i<=3){
-    
-    /* char choice; // Declare a character variable to store the user's choice
-    do { */
-
-        float radius=0, area_circle; // Declare variables for radius and area of the circle
-        float a=0, x=0; // Declare variables for coefficients of the parabola
-        float y, area_parabola; // Declare variables for coefficients and area of the parabola
-
-        printf("Enter the radius of the circle: "); // Prompt user for radius input
+    int i = 0;  // loop counter starts from 0
+    float radius, area_circle; // Declare variables for radius and area of the circle
+    float a = 0, x = 0, y = 0, area_parabola = 0; // Declare variables for parabola
+    while (i < 3) { // run exactly 3 times
+        printf("Enter radius of circle: "); // Prompt user for radius input
         scanf("%f", &radius); // Read the radius value from user input
         area_circle = PI * radius * radius; // Calculate the area of the circle
-        printf("The area of the circle with radius %.2f is: %.2f\n", radius, area_circle); // Print the area of the circle
+        printf("Area of circle is %f\n", area_circle); // Print the area of the circle
 
-        printf("Enter for the parabola (y^2 = 4ax) => a\t&\tx: "); // Prompt user for parabola coefficients
+        printf("Enter for parabola (y^2 = 4ax) => a\t&\tx: "); // Prompt user for parabola coefficients
         scanf("%f %f", &a, &x); // Read the coefficient a and x from user input
         y = 2 * sqrt(a * x); // Calculate the y value
-        area_parabola =(2.0/3.0) * 2*y*x; // Calculate the area of the parabola with y-axis
+        area_parabola = (2.0 / 3.0) * 2 * y * x; // Calculate the area of the parabola with y-axis
         printf("The area of the parabola is: %.2f\n", area_parabola); // Print the area of the parabola
-
-        i++;
+        i++; // increase counter
     }
-       /* printf("Do you want to perform another calculation? (y/n): "); // Ask user if they want to repeat
-        scanf(" %c", &choice); // Read user's choice
-    } while(choice == 'y' || choice == 'Y'); // Repeat if user chooses 'y' or 'Y' */
-    
+    return 0;
 }
