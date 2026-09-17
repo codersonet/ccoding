@@ -3,7 +3,7 @@
 int a, b;
 float x, y;
 Suppose the value 12 is to be entered into the computer and assigned to a, -8 assigned
-to b, 0.011 assigned to x and -2.2 x 10^6 assigned to y. Show the input data might most
+to b, 0.011 assigned to x and -2.2e6 assigned to y. Show the input data might most
 conveniently be entered for each of the following scanf functions
 a) scanf (“%d %d %f %f”, &a, &b, &x, &y);
 b) scanf (“%d %d %e %e”, &a, &b, &x, &y);
