@@ -1,23 +1,34 @@
 #include <stdio.h>
+int main() {
+    // Variables to store the user's input and the counts
+    int num;
+    int pcount = 0;
+    int ncount = 0;
+    char choice = 'y'; 			// Initialize choice to 'y' to enter the loop
+    // while loop continues as long as the user wishes
+    while (choice == 'y' || choice == 'Y') {
+        
+        // Uses printf() and scanf() for input/output
+        printf("Enter an integer: ");
+        scanf("%d", &num);
 
-int main(void)
-{
-	int num, pos=0, neg=0; // Declare variables to store the number, count of positive numbers, and count of negative numbers
-	char choice; // Declare a variable to store the user's choice to continue or not
+        // if-else statement: check if the number is positive or negative
+        if (num > 0) {
+            pcount++; 		// Increment positive count
+        } else if (num < 0) {
+            ncount++; 		// Increment negative count
+        } else {
+            printf("Zero is neither positive nor negative.\n");
+        }
+        // Ask the user if they want to continue
+        printf("Do you want to enter another number? (y/n): ");
+        // The space before %c helps to skip any leftover newline characters in the input buffer
+        scanf(" %c", &choice); 
+    }
 
-	do {
-		printf("Enter a number: "); // Prompt the user to enter a number
-		scanf("%d", &num);
-
-		if (num > 0) // Increment the count of positive numbers if the entered number is greater than 0
-			pos++;
-		else if (num < 0) // Increment the count of negative numbers if the entered number is less than 0
-			neg++;
-
-		printf("Total positives: %d\n", pos);
-		printf("Total negatives: %d\n", neg);
-		printf("Do you want to continue? (y/n): ");
-		scanf(" %c", &choice);
-	} while (choice == 'y' || choice == 'Y'); // Continue the loop if the user enters 'y' or 'Y'
-	return 0; // Return 0 to indicate successful execution
+    // Display the correct number of positive and negative integers
+    printf("\n--- Final Count ---");
+    printf("\nPositive integers: %d", pcount);
+    printf("\nNegative integers: %d\n", ncount);
+    return 0;
 }
