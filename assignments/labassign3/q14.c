@@ -5,3 +5,6 @@ b. If the integer is a Fibonacci number */
 
 /* including libraries */
 #include <stdio.h>
+int main(){
+    
+}
