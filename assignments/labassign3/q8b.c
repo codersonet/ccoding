@@ -6,11 +6,14 @@ conversion specifiers, and (iii) one printf() without conversion specifiers.
 fixpt = 345.6789 in fixed -point decimal format as follows:
 (i) two decimal points (ii) five decimal points (iii) zero decimal points 
 Program make use of formatted output statement (printf()) [EBG/8th ed/pg.113-116] */
-#include<stdio.h>
 
+#include<stdio.h>                   // including libraries
 int main(){
-    int num1, num2, num3;
-    printf("Enter 3 inetegral values: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
-
+	double numexp = 102.45678;		// intialised value to numexp
+	float fixpt = 345.6789;			// intialised value to fixpt
+	printf("number in expo is %e\n", numexp);	// printing in exponential format
+	printf("two decimal pts: %.2f\n", fixpt);	// printing upto two decimal
+	printf("five decimal pts: %.5f\n", fixpt);	// printing upto five decimal
+	printf("zero decimal pts: %.0f\n", fixpt);	// printing integer
+	return 0;				// return zero after seccessful execution
 }
