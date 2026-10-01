@@ -9,7 +9,7 @@ int main(){
     float eqr, rd1, rd2;    //intialising variables to store roots for different condition
     printf("Enter coefficient of quadratic (ax^2+bx+c=0): ");
     scanf("%d %d %d", &a, &b, &c);      // assigning value to the variables
-    printf("Given Qudratic equation is %dx^2+%db+%d=0\n", a, b, c);
+    printf("Given Qudratic equation is %dx^2+%dx+%d=0\n", a, b, c);
     D = b*b - 4*a*c;                    //calculating discrimant of quadratic
     if(D==0){
         eqr = -b/(2*a);                 //equal roots calculation & assinging to variable eqr
