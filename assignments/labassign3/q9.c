@@ -74,7 +74,7 @@ double sinSeries(double x) {
    - next term is 1/2^2, then 1/3^3, then 1/4^4, ...
    - each new term uses the next value of n
 */
-double reciprocalPowerSeries(void) {
+double rps(void) {
     double sum = 0.0;      // final sum
     double term = 1.0;     // current term: 1/1^1, 1/2^2, 1/3^3, ...
     int n = 1;
@@ -110,7 +110,7 @@ int main(void) {
         printf("sin(%.3f) = %.6f\n", x, result);
     } 
     else if (choice == 3) {
-        result = reciprocalPowerSeries();
+        result = rps();
         printf("Sum = %.6f\n", result);
     } 
     else if (choice == 4) {
@@ -121,4 +121,6 @@ int main(void) {
         return 1;
     }
     return 0;
+
 }
+
