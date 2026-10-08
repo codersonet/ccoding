@@ -1,20 +1,13 @@
-/* Write a C program that reads a positive integer and checks whether it is:
-   a. a prime number
-   b. a Fibonacci number */
-
-/* Include the standard input/output library for printf and scanf. */
-#include <stdio.h>
+#include <stdio.h>      //Include the standard input/output library for printf and scanf.
 
 /* Start of the main function, where the program execution begins. */
 int main() {
-    /* Declare variables: n stores the user input, i is used in the loop, flag tracks prime-check status, and first, second, next store Fibonacci sequence values. */
+    /* Declare variables: n stores the user input, i is used in the loop, flag tracks prime-check status, and first, second, next store Fibonacci sequence values*/
     int n, i, flag = 0, first = 0, second = 1, next = 0;
 
-    /* Prompt the user to enter a positive integer. */
-    printf("Enter a positive integer: ");
+    printf("Enter a positive integer: ");       //Prompt the user to enter a positive integer.
 
-    /* Read the integer entered by the user and store it in n. */
-    scanf("%d", &n);
+    scanf("%d", &n);      //Read the integer entered by the user and store it in n.
 
     /* If n is 2 or greater, check whether it is a prime number. */
     if (n >= 2) {
@@ -24,30 +17,24 @@ int main() {
             if (n % i == 0) {
                 /* Set flag to 1 to indicate a divisor was found. */
                 flag = 1;
-                /* Stop the loop because the number is confirmed not to be prime. */
+                // Stop the loop because the number is confirmed not to be prime.
                 break;
             }
         }
 
-        /* If no divisor was found, print that the number is prime. */
+        // If no divisor was found, print that the number is prime. 
         if (flag == 0)
             printf("%d is a prime number.\n", n);
         else
             printf("%d is not a prime number.\n", n);
-    } else {
-        /* Numbers less than 2 are not prime. */
-        printf("%d is not a prime number.\n", n);
+    } 
+    else {
+        printf("%d is not a prime number.\n", n);       // Numbers less than 2 are not prime.
     }
 
     /* Reset the flag variable for the Fibonacci check. */
     flag = 0;
-
-    /* Reset the Fibonacci sequence variables to start from 0 and 1. */
-    first = 0;
-    second = 1;
-    next = 0;
-
-    /* Generate Fibonacci numbers until the next number is greater than or equal to n. */
+        /* Generate Fibonacci numbers until the next number is greater than or equal to n. */
     while (next < n) {
         /* Compute the next Fibonacci number as the sum of the previous two values. */
         next = first + second;
@@ -63,6 +50,5 @@ int main() {
     else
         printf("%d is not a Fibonacci number.\n", n);
 
-    /* Return 0 to indicate the program ended successfully. */
-    return 0;
+    return 0;           //Return 0 to indicate the program ended successfully.
 }
