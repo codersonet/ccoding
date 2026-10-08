@@ -20,5 +20,6 @@ int main() {
 
     // (iii) one printf() without conversion specifiers
     printf("The three integers were entered on one line.\n");
+    printf("10 20 30\n"); // without conversion specifiers, just printing a string
     return 0;
 }

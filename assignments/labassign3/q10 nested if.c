@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 /* program to check the roots of any quadratic equation */
-int main(){
+int rootsQuadratic(){
     int a,b,c,D;        //initalizing coeff and dicriminant of quadratic
     float eqr, rd1, rd2;    //intialising variables to store roots for different condition
     printf("Enter coefficient of quadratic (ax^2+bx+c=0): ");
@@ -23,5 +23,15 @@ int main(){
     else{                               
         printf("D<0: Imaginary roots\n"); //displaying the imaginary roots case
     }                                   
+    return 0;                           //returning zero value after successful executuion
+}
+
+int main(){
+    char choice = 'y';                        //initializing variable to store user choice
+    while(choice == 'y' || choice == 'Y'){
+        rootsQuadratic();                   //calling the function to check the roots of quadratic equation
+        printf("Do you want to check another quadratic equation? (y/n): ");
+        scanf(" %c", &choice);
+    }
     return 0;                           //returning zero value after successful executuion
 }
