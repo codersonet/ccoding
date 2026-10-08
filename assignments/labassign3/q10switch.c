@@ -5,13 +5,22 @@
 
 /* program to check the roots of any quadratic equation */
 int rootsQuadratic(){
-    int a,b,c,D;        //initalizing coeff and dicriminant of quadratic
+    int a,b,c,D, discriminant;        //initalizing coeff and dicriminant of quadratic
     float eqr, rd1, rd2;    //intialising variables to store roots for different condition
     printf("Enter coefficient of quadratic (ax^2+bx+c=0): ");
     scanf("%d %d %d", &a, &b, &c);      // assigning value to the variables
     printf("Given Qudratic equation is %dx^2+%dx+%d=0\n", a, b, c);
     D = b*b - 4*a*c;                    //calculating discrimant of quadratic
-    switch(D>0){
+    if(D>0){
+    discriminant = 1;
+    }
+    else if(D==0){
+        discriminant = 0;
+    }
+    else{
+        discriminant = -1;
+    }
+    switch(discriminant){
         case 1:
             rd1= (-b+sqrt(D))/(2*a);        //1st root calculation & assinging to variable eqr
             rd2= (-b-sqrt(D))/(2*a);        //2nd root calculation & assinging to variable eqr
