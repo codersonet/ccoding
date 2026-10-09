@@ -5,7 +5,8 @@
 
 /* program to check the roots of any quadratic equation */
 int rootsQuadratic(){
-    int a,b,c,D, discriminant;        //initalizing coeff and dicriminant of quadratic
+    int discriminant;
+    double a,b,c,D;        //initalizing coeff and dicriminant of quadratic
     double req, rd1, rd2, lr, realpart, imgpart;    //intialising variables to store roots for different condition
     printf("Enter coefficient of quadratic (ax^2+bx+c=0): ");
     scanf("%d %d %d", &a, &b, &c);      // assigning value to the variables
