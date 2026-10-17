@@ -2,7 +2,7 @@
 #include <string.h>
 
 int trace(){
-    int rlen, clen, sum = 0;
+    int rlen, clen, sum = 0;                // variable to store the sum of diagonal elements
 
     printf("Enter row and column length: ");
     scanf("%d %d", &rlen, &clen);
@@ -23,8 +23,7 @@ int trace(){
         }
     }
 
-    // Finding diagonal elements and trace
-    printf("Diagonal elements are: ");
+    printf("Diagonal elements are: ");                 // Finding diagonal elements and trace
     if(rlen == clen){
         for(int i=0; i<rlen; i++){
             for(int j=0; j<clen; j++){
@@ -37,7 +36,7 @@ int trace(){
         printf("\n");
         printf("Trace/sum of matrix is: %d\n", sum);
     }
-    else
+    else                                // if not a square matrix, trace is not possible
         printf("Trace is not possible for non-square matrix.\n");
         
     return 0;

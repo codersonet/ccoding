@@ -1,8 +1,9 @@
 #include <stdio.h>
-#define rlen 3
-#define clen 3
+#define rlen 3                  // define row length as 3
+#define clen 3                  // define column length as 3
  
 int main(){
+        // declare 2D array nits and iitd
         int nits[rlen][clen], iitd[rlen][clen] = {{1,2,3},
                                                   {4,5,6},
                                                   {7,8,9}};
