@@ -1,44 +1,49 @@
 #include <stdio.h>
+#include <string.h>
 
 int trace(){
-        int rlen, clen, sum = 0;
-        int mat[rlen][clen];
+    int rlen, clen, sum = 0;
 
-        printf("Enter row and coloum length: ");
-                scanf("%d %d", &rlen, &clen);
+    printf("Enter row and column length: ");
+    scanf("%d %d", &rlen, &clen);
 
-        if(rlen == clen)
-                printf("It is a square matrix.\n");
-        else
-                printf("It is not a square matrix\n.");
+    // Declare the matrix rlen and clen have values
+    int mat[rlen][clen];
 
-        // assigning values to matrix
+    if(rlen == clen)
+        printf("It is a square matrix.\n");
+    else
+        printf("It is not a square matrix.\n");
 
-        for(int i=1; i<=rlen; i++){
-            for(int j=1; j<=clen; j++){
-                printf("Enter element mat[%d][%d] = ", i, j);
-                scanf("%d", &mat[i][j]);        
+    // Assigning values to matrix (using 0-based indexing)
+    for(int i=0; i<rlen; i++){
+        for(int j=0; j<clen; j++){
+            printf("Enter element mat[%d][%d] = ", i+1, j+1);
+            scanf(" %d", &mat[i][j]);
+        }
+    }
+
+    // Finding diagonal elements and trace
+    printf("Diagonal elements are: ");
+    if(rlen == clen){
+        for(int i=0; i<rlen; i++){
+            for(int j=0; j<clen; j++){
+                if(i==j){
+                    sum+= mat[i][j];
+                    printf("%d ", mat[i][j]);
+                }
             }
         }
-
-        // finding diagonal and trace
-        if(rlen == clen){
-                for(int i=1; i<=rlen; i++){
-                        for(int j=1; j<=clen; j++){
-                                if(i==j){
-                                        sum+= mat[i][j];
-                                        printf("%d ", mat[i][j]);
-                                }
-                        }
-                }
-                printf("Trace/sum of matrix is: %d", sum);
-        }
-        else
-                printf("Trace is not possible for non-square matrix.\n");
-        return 0;       
+        printf("\n");
+        printf("Trace/sum of matrix is: %d\n", sum);
+    }
+    else
+        printf("Trace is not possible for non-square matrix.\n");
+        
+    return 0;
 }
 
 int main(){
-        trace();
-        return 0;
+    trace();
+    return 0;
 }
