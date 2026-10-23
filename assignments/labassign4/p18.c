@@ -49,8 +49,7 @@ int main(void)
     // Read each equation's coefficients followed by its right-hand-side value.
     printf("Enter the coefficients of each equation, followed by its B value.\n");
     for (int row = 0; row < equations; row++) {
-        printf("Equation %d (%d coefficients and then B): ",
-               row + 1, unknowns);
+        printf("Equation %d (%d coefficients and then B): ", row + 1, unknowns);
         for (int col = 0; col <= unknowns; col++) {
             if (scanf("%lf", &matrix[row][col]) != 1) {
                 printf("Invalid number in the system.\n");
