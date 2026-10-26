@@ -25,20 +25,20 @@ int arr(){
                                 continue;
                         }
                         else{
-                                  revme[i] = myint[i] + myflt[i];         // assigning values to the array
+                                revme[i] = myint[i] + myflt[i];         // assigning values to the array
                                 printf("revme[%d]: %d\n", i, revme[i]);
                         }
                 }
         }
         else{
                 for(int i=0; i<myfltlen; i++){
-                        if(i >= myintlen){          // checkiing if the index is greater than the length of the integer array
+                        if(i >= myintlen){          // checking if the index is greater than the length of the integer array
                                 revme[i] = myflt[i];         // assigning values to the array
                                 printf("revme[%d]: %d\n", i, revme[i]);
                                 continue;
                         }
                         else{
-                                  revme[i] = myint[i] + myflt[i];         // assigning values to the array
+                                revme[i] = myint[i] + myflt[i];         // assigning values to the array
                                 printf("revme[%d]: %d\n", i, revme[i]);
                         }
                 }

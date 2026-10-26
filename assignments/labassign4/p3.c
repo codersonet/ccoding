@@ -53,7 +53,7 @@ int isIdentity(){
 }
 
 int main(){
-        char choice = 'y';              // sets choice to yu by default
+        char choice = 'y';              // sets choice to y by default
         while(choice == 'y' || choice == 'Y'){
                 isIdentity();                 // calls the identity function
                 printf("\nDo you want to run Again? (y/n) ");

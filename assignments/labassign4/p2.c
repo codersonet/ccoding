@@ -45,7 +45,7 @@ int isPalindrome(){
 }
 
 int main(){
-        char choice = 'y';              // sets choice to yu by default
+        char choice = 'y';              // sets choice to y by default
         while(choice == 'y' || choice == 'Y'){
                 isPalindrome();                 // calls the palindrome function
                 printf("\nDo you want to run Again? (y/n) ");
