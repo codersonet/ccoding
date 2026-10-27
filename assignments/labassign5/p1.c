@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+// Define a structure to hold library information
 typedef struct {
     int num_books;
     int num_magazines;
@@ -8,6 +10,7 @@ typedef struct {
     char librarian_name[20];
 } Library;
 
+// Function to read library details from the user
 int main(void)
 {
     Library lib;
