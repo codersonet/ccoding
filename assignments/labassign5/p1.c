@@ -24,9 +24,12 @@ int main(void)
     scanf("%d", &lib.num_journals);
 
     printf("Enter Librarian Name: ");
-    getchar(); // Clear the newline character from the input buffer
-    fgets(lib.librarian_name, sizeof(lib.librarian_name), stdin); // Read the librarian name with spaces
-    lib.librarian_name[strcspn(lib.librarian_name, "\n")] = '\0'; // Remove the newline character if present
+    // Clear the newline character from the input buffer
+    getchar(); 
+    // Read the librarian name with spaces
+    fgets(lib.librarian_name, sizeof(lib.librarian_name), stdin);
+    // Remove the newline character if present
+    lib.librarian_name[strcspn(lib.librarian_name, "\n")] = '\0';
 
     printf("\nx--- Library Details ---x\n");
     printf("Books      : %d\n", lib.num_books);
