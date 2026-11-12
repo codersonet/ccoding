@@ -30,7 +30,7 @@ int main(){
         // print with each element location and value for iitd array
         for(int i = 0; i<rlen; i++){
             for(int j = 0; j<clen; j++){
-                    printf("nits[%d][%d] = %d\n", i+1, j+1,iitd[i][j]);
+                    printf("iitd[%d][%d] = %d\n", i+1, j+1,iitd[i][j]);
             }
         }
         printf("\n\n");

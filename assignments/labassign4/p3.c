@@ -7,9 +7,9 @@ int isIdentity(){
         scanf("%d %d", &row, &col);
         int matrix[row][col];
         if(row==col)            // checking if the matrix is a square matrix or not
-                printf("It is a square matrix.");
+                printf("It is a square matrix.\n");
         else
-                printf("Not a square matrix.");
+                printf("Not a square matrix.\n");
 
         // asking the user to enter the values of the matrix
         for(int i =1; i <= row; i++){

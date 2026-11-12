@@ -4,6 +4,6 @@
 
 typedef struct 
 {
-    int oned[];
-    int twod[][];
+    int onedim[30];
+    int twodim[20][20];
 } vectors;

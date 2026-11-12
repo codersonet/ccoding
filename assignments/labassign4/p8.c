@@ -1,48 +1,51 @@
 #include <stdio.h>
-#include <string.h>
 
-int trace(){
-    int rlen, clen, sum = 0;                // variable to store the sum of diagonal elements
+int trace()
+{
+        int rlen, clen, sum = 0;
 
-    printf("Enter row and column length: ");
-    scanf("%d %d", &rlen, &clen);
+        printf("Enter row and coloum length: ");
+                scanf("%d %d", &rlen, &clen);
 
-    // Declare the matrix rlen and clen have values
-    int mat[rlen][clen];
+        int mat[rlen][clen];
 
-    if(rlen == clen)
-        printf("It is a square matrix.\n");
-    else
-        printf("It is not a square matrix.\n");
+        if(rlen == clen)
+                printf("It is a square matrix.\n");
+        else
+                printf("It is not a square matrix\n.");
 
-    // Assigning values to matrix (using 0-based indexing)
-    for(int i=0; i<rlen; i++){
-        for(int j=0; j<clen; j++){
-            printf("Enter element mat[%d][%d] = ", i+1, j+1);
-            scanf(" %d", &mat[i][j]);
-        }
-    }
+        // assigning values to matrix
 
-    printf("Diagonal elements are: ");                 // Finding diagonal elements and trace
-    if(rlen == clen){
         for(int i=0; i<rlen; i++){
-            for(int j=0; j<clen; j++){
-                if(i==j){
-                    sum+= mat[i][j];
-                    printf("%d ", mat[i][j]);
+                for(int j=0; j<clen; j++){
+                        printf("Enter element mat[%d][%d] = ", i+1, j+1);
+                        scanf("%d", &mat[i][j]);        
                 }
-            }
         }
-        printf("\n");
-        printf("Trace/sum of matrix is: %d\n", sum);
-    }
-    else                                // if not a square matrix, trace is not possible
-        printf("Trace is not possible for non-square matrix.\n");
-        
-    return 0;
+
+        // finding diagonal and trace
+        printf("Diagonal Elements: \n");
+        if(rlen == clen){
+                for(int i=0; i<rlen; i++){
+                        for(int j=0; j<clen; j++){
+                                if(i==j)
+                                {
+                                        sum+= mat[i][j];
+                                        printf("%d ", mat[i][j]);
+                                }
+                                else
+                                {
+                                        printf(" ");
+                                }
+                        }
+                        printf("\n");
+                }
+                printf("Trace/sum of matrix is: %d\n", sum);
+        }
+        return 0;       
 }
 
 int main(){
-    trace();
-    return 0;
+        trace();
+        return 0;
 }
