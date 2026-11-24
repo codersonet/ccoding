@@ -1,5 +1,3 @@
-/* Q2: 1D and 2D vectors using structures (no pointers, structures are
-   passed by value and the changed structure is returned) */
 #include <stdio.h>
 
 #define M_SIZE 30     /* max size of 1D vector */
